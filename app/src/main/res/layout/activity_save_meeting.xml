@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mysavedesign"
+    tools:context=".SaveMeeting">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/meetingicon" />
+
+    <EditText
+        android:id="@+id/meetingWith"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="With"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/meetingDate"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetingWith" />
+
+    <EditText
+        android:id="@+id/meetingTime"
+        android:layout_width="260dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetingDate" />
+
+    <EditText
+        android:id="@+id/meetingVenue"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Venue"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetingTime" />
+
+    <ImageView
+        android:id="@+id/meetingdateIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/meetingDate"
+        app:layout_constraintTop_toBottomOf="@+id/meetingWith"
+        app:srcCompat="@drawable/calendaricon" />
+
+    <ImageView
+        android:id="@+id/meetingtimeIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/meetingTime"
+        app:layout_constraintTop_toBottomOf="@+id/meetingdateIcon"
+        app:srcCompat="@drawable/timeicon" />
+
+    <EditText
+        android:id="@+id/meetingRequirements"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Any requirements"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetingVenue" />
+
+    <ImageView
+        android:id="@+id/meetingSaveBtn"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetingRequirements"
+        app:srcCompat="@drawable/button_save" />
+
+    <ImageView
+        android:id="@+id/meetingUpdateBtn"
+        android:layout_width="220dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintStart_toStartOf="@+id/meetingSaveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/meetingRequirements"
+        app:srcCompat="@drawable/button_update" />
+
+</android.support.constraint.ConstraintLayout>

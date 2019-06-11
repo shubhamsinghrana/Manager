@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/socialIconBox"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <TextView
+        android:id="@+id/socialNameBox"
+        android:layout_width="177dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/mytext"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/socialIconBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nextSocialIcon"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/socialNameBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nexticon" />
+</android.support.constraint.ConstraintLayout>

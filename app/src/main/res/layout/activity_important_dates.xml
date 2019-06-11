@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myappback"
+    tools:context=".ImportantDates">
+
+    <ImageView
+        android:id="@+id/bdayImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/birthicon" />
+
+    <ImageView
+        android:id="@+id/meetingImage"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:srcCompat="@drawable/meetingicon" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="129dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:gravity="center"
+        android:text="Birthdays"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bdayImage" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="129dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:gravity="center"
+        android:text="Meetings"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetingImage" />
+
+    <ImageView
+        android:id="@+id/myNoteImage"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:srcCompat="@drawable/diary1" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="129dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginStart="112dp"
+        android:gravity="center"
+        android:text="Secret Note"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myNoteImage" />
+</android.support.constraint.ConstraintLayout>

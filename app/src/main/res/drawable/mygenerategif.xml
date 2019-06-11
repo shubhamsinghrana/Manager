@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/fr1"/>
+    <item android:drawable="@drawable/fr2"/>
+    <item android:drawable="@drawable/fr3"/>
+    <item android:drawable="@drawable/fr4"/>
+    <item android:drawable="@drawable/fr5"/>
+    <item android:drawable="@drawable/fr6"/>
+    <item android:drawable="@drawable/fr7"/>
+    <item android:drawable="@drawable/fr8"/>
+    <item android:drawable="@drawable/fr9"/>
+    <item android:drawable="@drawable/fr10"/>
+
+
+</animation-list>
